@@ -25,10 +25,11 @@ last, since it exercises everything else.
    already exists (`docs/adr/0000-template.md`); confirm it fits.
 7. **GitHub setup:** created by Claude Code with the `gh` CLI, commands
    approved by the tech lead before they run:
-   - Labels: `type:` feature / chore / docs / spike; `area:` engine /
-     harness / cli / process; `needs-spec`.
+   - Labels: `type:` feature / bug / chore / docs / spike; `area:` engine /
+     harness / cli / process; `needs-spec`. GitHub's default labels removed.
    - Milestones: Sprint 0, M1, M2, M3.
-   - Project board with a Status field (Todo / In Progress / In Review / Done).
+   - Public project board with a Status field (Todo / In Progress / In
+     Review / Done).
    - One issue per Sprint 0 task, with acceptance criteria. M1 issues are
      created when M1 starts; until then `m1.md` holds the plan.
    - Branch protection on `main`: changes only through a PR, no approving
