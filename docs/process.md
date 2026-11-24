@@ -57,6 +57,45 @@ timestamps, never entered by hand, for every task and milestone.
 - Flagged hunks have been reviewed by the human
 - Docs and ADRs are updated if a decision changed
 
+## Task workflow
+
+How the implementer runs a task from start to merge.
+
+**Principle: ask on one-way doors, decide and flag on two-way doors.** A
+one-way door is a decision where a wrong guess is expensive to undo —
+including building the wrong thing. A two-way door is cheap to change later.
+
+**Channels:** blocking questions go in the session, and work waits for the
+answer. Judgment calls go in the PR under "Needs your decision", each with
+the implementer's default, so merging without comment accepts the defaults.
+
+1. **Before starting:** read the issue and its spec and check the
+   definition of ready. If the spec is unclear, or the task is too big for
+   one PR, ask before writing any code: all questions in one message, each
+   with a suggested answer. A split is proposed, never done unilaterally.
+2. **Start:** convert the issue's acceptance criteria to the numbered
+   format if needed, move the issue to In Progress, and create the branch
+   `<issue#>-<slug>` from an up-to-date `main`.
+3. **During the work, stop and ask when:**
+   - a dependency would be added;
+   - the spec is wrong or contradicts itself;
+   - the work would contradict an accepted ADR;
+   - the scope grows beyond the issue;
+   - an action is hard to reverse or affects something outside the repo
+     (GitHub settings, anything public);
+   - making a test pass would require changing the test or the spec (never
+     weaken a test to get green);
+   - the same approach has failed twice: stop and report what was tried and
+     why it didn't work.
+
+   Anything else: decide, and flag it in the PR.
+4. **End:** open the PR from the template, move the issue to In Review, and
+   stop.
+5. **Review and merge:** the human comments; fixes go on the same PR, with
+   the Review focus links regenerated. The human merges; repo settings
+   delete the remote branch, and the implementer only syncs `main` and
+   deletes the local branch.
+
 ## Acceptance
 
 Issue acceptance criteria are numbered (`AC-1`, …) and never ticked. The

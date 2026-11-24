@@ -38,6 +38,7 @@ before doing anything else.
 - Spikes live on `spike/*` branches and are never merged. Their note in
   `docs/experiments/` lands by its own small docs PR.
 - Never merge a PR. The human merges.
+- Run every task by the task workflow in `docs/process.md`: when to stop and ask, and when to decide and flag.
 
 ## Conventions
 
