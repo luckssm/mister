@@ -132,6 +132,10 @@ status_option() { jq -r --arg n "$1" '.field.options[] | select(.name == $n) | .
 # Sprint 0 issues (create if missing, matched by exact title)
 # Created in task order on a repo with no issues or PRs yet, so issue #N is
 # task N. Each body is that task's approved spec (Sprint 0 bootstrap rule).
+#
+# These bodies are SEED versions, used only when an issue is created. Once an
+# issue exists, the GitHub issue is the canonical spec and this script is not
+# kept in sync with later edits to it.
 # ---------------------------------------------------------------------------
 existing_issues="$(gh issue list --repo "$REPO" --state all --limit 500 --json title,url)"
 
@@ -237,6 +241,8 @@ Issue, PR and spec templates; confirm the ADR template.
 - [ ] PR template with every field `CLAUDE.md` requires (linked issue and spec, what changed, assumptions, things not verified, tests added/changed with reason, reviewer context).
 - [ ] Spec template in `docs/specs/` with testable acceptance criteria and a place for the brief.
 - [ ] `docs/adr/0000-template.md` confirmed or adjusted; the PR says which.
+- [ ] The PR template follows the PR description format agreed in #13: a 3–5 line summary; the `CLAUDE.md` fields as short bullets, with **Assumptions I made** and **Things I could not verify** kept prominent; bulky evidence (script runs, logs, command output) in collapsed `<details>` blocks, one per item, each with a one-line `<summary>`.
+- [ ] `CLAUDE.md`'s PR description section points to the PR template, so the format is defined only in the template.
 
 ## Reviewer context
 GitHub issue/PR templates (`.github/`).
@@ -266,6 +272,7 @@ A product-owner agent that drafts specs and reviews demos. Never writes code.
 - [ ] Given a brief, it drafts a spec using the spec template (task 6). The PR includes one example run.
 - [ ] Given a deliverable and a definition of done, it reviews one against the other. The PR includes one example run.
 - [ ] Its instructions say it never writes code and pushes back on scope outside the current milestone.
+- [ ] Given a milestone's tasks, proposes an execution order with dependencies; once the tech lead approves it, sets the dependencies and the board order.
 
 ## Reviewer context
 Claude Code subagents (`.claude/agents/`).
