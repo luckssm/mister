@@ -48,14 +48,17 @@ before doing anything else.
 - PRs are squash-merged; the PR title becomes the commit message, so it
   follows Conventional Commits too.
 
-## Every PR description must include
+## PR descriptions
 
-- Linked issue and spec
-- What changed (short)
-- **Assumptions I made**
-- **Things I could not verify**
-- Tests added, and tests changed (with the reason)
-- Reviewer context: the concepts a reviewer needs to understand this PR
+`.github/pull_request_template.md` defines the required sections and their
+format; follow it exactly and fill every section. `gh pr create` doesn't
+apply the template on its own: start the body from that file and pass it
+with `--body-file`.
+
+## Issues and specs
+
+New issues use `.github/ISSUE_TEMPLATE/task.md`. New specs start from
+`docs/specs/0000-template.md`; ADRs from `docs/adr/0000-template.md`.
 
 ## Commands
 

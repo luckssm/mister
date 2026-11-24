@@ -53,7 +53,7 @@ timestamps, never entered by hand, for every task and milestone.
 
 - Acceptance criteria are covered by tests, written before the implementation
 - CI is green
-- The PR description is complete (see `CLAUDE.md`)
+- The PR description is complete (see `.github/pull_request_template.md`)
 - Flagged hunks have been reviewed by the human
 - Docs and ADRs are updated if a decision changed
 

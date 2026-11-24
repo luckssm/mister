@@ -1,0 +1,64 @@
+## Summary
+
+**Closes #N** · Spec: <!-- link to the spec in docs/specs/, or "#N's body" for Sprint 0 bootstrap issues -->
+
+<!-- 3–5 lines: what changed and why. -->
+
+## Review focus
+
+<!--
+The specific places to actually look. Where to look, not background.
+One bullet each: `file:line` (at this PR's head commit), what is there, and
+why it needs eyes, labelled with one of:
+  **risky** · **judgment call** · **first time running for real** · **uncertain**
+Example:
+- `scripts/setup.sh:42` (protection PUT): **risky.** Replaces the whole config on every run.
+-->
+
+- 
+
+## Assumptions I made
+
+<!-- Short bullets. Write "None" rather than removing the section. -->
+
+- 
+
+## Things I could not verify
+
+<!-- Short bullets. Write "None" rather than removing the section. -->
+
+- 
+
+## Files changed
+
+<!-- One line per file: what changed and why. -->
+
+- `path`: 
+
+## Tests
+
+<!--
+Nothing added or changed: one line, e.g. "None added or changed: docs-only change (exempt)."
+Otherwise one bullet per test added, and per test changed with the reason
+(changing a test together with the code it tests needs a spec change; say which).
+-->
+
+## Reviewer context
+
+<!-- Only the concepts a reviewer needs to understand this PR (e.g. seeded RNGs, property-based testing). Things to check go in Review focus. -->
+
+- 
+
+## Evidence
+
+<!--
+Bulky output (script runs, logs, command output), one collapsed block per item,
+each with a one-line summary stating the outcome. Delete this section if there is none.
+
+<details><summary>Outcome in one line</summary>
+
+```
+output
+```
+</details>
+-->

@@ -21,8 +21,9 @@ last, since it exercises everything else.
    runs, make the CI check required by branch protection on `main`.
 5. **Benchmark harness:** Vitest bench running in CI (reporting only, no budget yet).
 6. **Templates:** issue template (with spec link and reviewer context), PR
-   template (fields from `CLAUDE.md`), spec template. The ADR template
-   already exists (`docs/adr/0000-template.md`); confirm it fits.
+   template (it defines the PR description format; `CLAUDE.md` points to
+   it), spec template. The ADR template already exists
+   (`docs/adr/0000-template.md`); confirm it fits.
 7. **GitHub setup:** created by Claude Code with the `gh` CLI, commands
    approved by the tech lead before they run:
    - Labels: `type:` feature / bug / chore / docs / spike; `area:` engine /
