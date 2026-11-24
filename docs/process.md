@@ -47,15 +47,27 @@ timestamps, never entered by hand, for every task and milestone.
 - It links an approved spec
 - Its acceptance criteria are testable
 - It's small enough for one PR
-- Its reviewer context is identified
+- Any reviewer context it needs is identified
 
 ## Definition of done (a task is done when)
 
 - Acceptance criteria are covered by tests, written before the implementation
 - CI is green
-- The PR description is complete (see `CLAUDE.md`)
+- The PR description is complete (see `.github/pull_request_template.md`)
 - Flagged hunks have been reviewed by the human
 - Docs and ADRs are updated if a decision changed
+
+## Acceptance
+
+Issue acceptance criteria are numbered (`AC-1`, …) and never ticked. The
+issue stays the spec; the PR's Acceptance criteria section maps each
+criterion to its evidence; merging the PR is the acceptance.
+
+## Repo settings
+
+GitHub settings (labels, milestones, the project board, merge settings,
+branch protection) change only through `scripts/github-setup.sh`, in a PR,
+never by hand: a re-run of the script reverts manual changes.
 
 ## Spikes
 
@@ -73,9 +85,11 @@ by a new ADR.
 
 ## Reviewer context
 
-Every PR lists the concepts a reviewer needs to understand it (for example
-property-based testing or seeded RNGs), so review never depends on
-knowledge that isn't written down.
+When a PR uses a concept, library or technique that's new to this codebase
+or non-obvious to an experienced developer (for example property-based
+testing or seeded RNGs), its description names it, so review never depends
+on knowledge that isn't written down. Otherwise the section is omitted. A
+concept tied to one spot goes into that Review focus item instead.
 
 ## Framework metrics
 
