@@ -50,8 +50,8 @@ before doing anything else.
 
 ## PR descriptions
 
-`.github/pull_request_template.md` defines the required sections and their
-format; follow it exactly and fill every section. `gh pr create` doesn't
+`.github/pull_request_template.md` defines the sections, their format and
+which are optional; follow it exactly. `gh pr create` doesn't
 apply the template on its own: start the body from that file and pass it
 with `--body-file`.
 
