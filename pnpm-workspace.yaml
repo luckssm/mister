@@ -1,0 +1,10 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+
+# ADR-0006: refuse any package version published less than 30 days ago
+# (value in minutes: 30 × 24 × 60).
+minimumReleaseAge: 43200
+
+# Fail installs on a Node version other than the one pinned in package.json.
+engineStrict: true

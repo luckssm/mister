@@ -64,3 +64,15 @@ New issues use `.github/ISSUE_TEMPLATE/task.md`. New specs start from
 ## Commands
 
 _Filled during Sprint 0: each task's PR adds the commands it introduces._
+
+Setup (once per machine; versions from ADR-0006):
+
+- `nvm install` installs the Node version in `.nvmrc`, alongside any others.
+- `nvm use`, then `npm install -g pnpm@10.34.9`: pnpm for that Node only
+  (the version in `package.json`'s `packageManager`).
+
+Every shell, inside the repo:
+
+- `nvm use`: switch to the pinned Node. pnpm fails on any other version.
+- `pnpm install`: install workspace dependencies. Refuses package versions
+  younger than 30 days.
