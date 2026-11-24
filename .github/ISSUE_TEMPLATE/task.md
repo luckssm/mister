@@ -12,9 +12,12 @@ labels: []
 
 ## Acceptance criteria
 
-<!-- Testable, each one able to become a test. Copied or narrowed from the spec. -->
+<!--
+Numbered, testable, each one able to become a test. Copied or narrowed from the spec.
+Plain bullets, not checkboxes: they are never ticked. The PR maps each one to its evidence.
+-->
 
-- [ ] 
+- **AC-1:** 
 
 ## Reviewer context
 

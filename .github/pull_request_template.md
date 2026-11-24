@@ -17,9 +17,23 @@ Example:
 
 - 
 
+## Acceptance criteria
+
+<!--
+One line per criterion of the linked spec, cited by number, each mapped to its
+evidence: a test name, a run output (in Evidence) or a check.
+Example:
+- **AC-1:** `engine/rng.test.ts` › "same seed, same sequence"
+-->
+
+- **AC-1:** 
+
 ## Assumptions I made
 
-<!-- Short bullets. Write "None" rather than removing the section. -->
+<!--
+Short bullets. Write "None" rather than removing the section.
+An assumption that is also risky goes only in Review focus, not here.
+-->
 
 - 
 

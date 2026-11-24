@@ -57,6 +57,18 @@ timestamps, never entered by hand, for every task and milestone.
 - Flagged hunks have been reviewed by the human
 - Docs and ADRs are updated if a decision changed
 
+## Acceptance
+
+Issue acceptance criteria are numbered (`AC-1`, …) and never ticked. The
+issue stays the spec; the PR's Acceptance criteria section maps each
+criterion to its evidence; merging the PR is the acceptance.
+
+## Repo settings
+
+GitHub settings (labels, milestones, the project board, merge settings,
+branch protection) change only through `scripts/github-setup.sh`, in a PR,
+never by hand: a re-run of the script reverts manual changes.
+
 ## Spikes
 
 Throwaway exploration to answer a question ("does a 5×6 grid feel
