@@ -11,8 +11,20 @@ The specific places to actually look. Where to look, not background.
 One bullet each: `file:line` (at this PR's head commit), what is there, and
 why it needs eyes, labelled with one of:
   **risky** · **judgment call** · **first time running for real** · **uncertain**
+
+Links:
+- `file:line` links to that spot in this PR's diff, so it opens in context:
+  https://github.com/OWNER/REPO/pull/N/files#diff-<sha256 of the path>R<line>
+  (R = line in the new version; L<line> for a removed line.)
+- Items labelled **risky** also get a commit permalink on its own line, so
+  GitHub embeds the snippet in the description:
+  https://github.com/OWNER/REPO/blob/<full head sha>/path#L<x>-L<y>
+- When new commits move the lines, regenerate both links.
+
 Example:
-- `scripts/setup.sh:42` (protection PUT): **risky.** Replaces the whole config on every run.
+- [`scripts/setup.sh:42`](https://github.com/OWNER/REPO/pull/N/files#diff-<sha256>R42) (protection PUT): **risky.** Replaces the whole config on every run.
+
+  https://github.com/OWNER/REPO/blob/<sha>/scripts/setup.sh#L42-L50
 -->
 
 - 
