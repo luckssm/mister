@@ -47,7 +47,7 @@ timestamps, never entered by hand, for every task and milestone.
 - It links an approved spec
 - Its acceptance criteria are testable
 - It's small enough for one PR
-- Its reviewer context is identified
+- Any reviewer context it needs is identified
 
 ## Definition of done (a task is done when)
 
@@ -85,9 +85,11 @@ by a new ADR.
 
 ## Reviewer context
 
-Every PR lists the concepts a reviewer needs to understand it (for example
-property-based testing or seeded RNGs), so review never depends on
-knowledge that isn't written down.
+When a PR uses a concept, library or technique that's new to this codebase
+or non-obvious to an experienced developer (for example property-based
+testing or seeded RNGs), its description names it, so review never depends
+on knowledge that isn't written down. Otherwise the section is omitted. A
+concept tied to one spot goes into that Review focus item instead.
 
 ## Framework metrics
 

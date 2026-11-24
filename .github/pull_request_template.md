@@ -59,7 +59,13 @@ Otherwise one bullet per test added, and per test changed with the reason
 
 ## Reviewer context
 
-<!-- Only the concepts a reviewer needs to understand this PR (e.g. seeded RNGs, property-based testing). Things to check go in Review focus. -->
+<!--
+Optional. Include it only when this PR uses a concept, library or technique
+that's new to this codebase or non-obvious to an experienced developer
+(e.g. seeded RNGs, property-based testing). Otherwise delete the section
+entirely: no "None". A concept tied to one specific spot can go into that
+Review focus item instead. Only concepts here; things to check go in Review focus.
+-->
 
 - 
 

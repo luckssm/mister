@@ -21,7 +21,7 @@ Plain bullets, not checkboxes: they are never ticked. The PR maps each one to it
 
 ## Reviewer context
 
-<!-- The concepts a reviewer needs to understand the PR for this task. -->
+<!-- Optional: concepts new to this codebase or non-obvious to an experienced developer that the PR will rely on. Otherwise delete the section. -->
 
 - 
 
