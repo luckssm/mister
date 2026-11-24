@@ -73,6 +73,7 @@ Setup (once per machine; versions from ADR-0006):
 
 Every shell, inside the repo:
 
-- `nvm use`: switch to the pinned Node. pnpm fails on any other version.
+- `nvm use`: switch to the pinned Node. Installs fail on any other Node or
+  pnpm version (`engine-strict` in `.npmrc`).
 - `pnpm install`: install workspace dependencies. Refuses package versions
   younger than 30 days.
