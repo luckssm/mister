@@ -62,8 +62,8 @@ timestamps, never entered by hand, for every task and milestone.
 How the implementer runs a task from start to merge.
 
 **Principle: ask on one-way doors, decide and flag on two-way doors.** A
-one-way door is a choice that's hard to reverse or changes what gets built;
-a two-way door is cheap to change later.
+one-way door is a decision where a wrong guess is expensive to undo —
+including building the wrong thing. A two-way door is cheap to change later.
 
 **Channels:** blocking questions go in the session, and work waits for the
 answer. Judgment calls go in the PR under "Needs your decision", each with
