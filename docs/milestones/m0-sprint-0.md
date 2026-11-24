@@ -7,8 +7,9 @@ exists (task 6), each Sprint 0 issue carries its own acceptance criteria and
 serves as its spec. Those issue bodies count as approved specs once the tech
 lead approves the `gh` commands that create them.
 
-Task 7 runs first, so the other tasks have issues to attach to. Task 11 runs
-last, since it exercises everything else.
+Task 7 runs first, so the other tasks have issues to attach to; task 13
+comes before task 1, so the workflow is written down before the toolchain
+work starts. Task 11 runs last, since it exercises everything else.
 
 ## Tasks
 
@@ -54,6 +55,9 @@ last, since it exercises everything else.
     `no-restricted-imports` rules, so `packages/engine` fails CI on
     `Date.now()`, `Math.random()`, I/O modules, or imports from adapters or
     `packages/harness`. Must land before any M1 code.
+13. **Task workflow:** a "Task workflow" section in `docs/process.md`: how a
+    task runs from start to merge, when the implementer stops to ask (one-way
+    doors) and when it decides and flags in the PR (two-way doors).
 
 ## Definition of done
 
