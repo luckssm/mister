@@ -112,6 +112,9 @@ Review focus item instead. Only concepts here; things to check go in Review focu
 <!--
 Bulky output (script runs, logs, command output), one collapsed block per item,
 each with a one-line summary stating the outcome. Delete this section if there is none.
+Evidence is public: replace local paths, usernames, hostnames and the test
+machine's own toolchain versions with placeholders (`<workspace>`, `Node 20`),
+and add one line saying the output was trimmed.
 
 <details><summary>Outcome in one line</summary>
 

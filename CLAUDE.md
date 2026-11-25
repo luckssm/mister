@@ -38,6 +38,11 @@ before doing anything else.
 - Spikes live on `spike/*` branches and are never merged. Their note in
   `docs/experiments/` lands by its own small docs PR.
 - Never merge a PR. The human merges.
+- Nothing machine-specific in anything public (PR descriptions, issues,
+  commit messages, docs): no local paths, usernames, hostnames, or the
+  versions of tools installed on one machine. Use placeholders
+  (`<workspace>`, `Node 20`). The project's pinned versions (`.nvmrc`,
+  `packageManager`, `engines`) are part of the repo and may be named.
 - Run every task by the task workflow in `docs/process.md`: when to stop and ask, and when to decide and flag.
 
 ## Conventions
