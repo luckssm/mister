@@ -82,3 +82,9 @@ Every shell, inside the repo:
   pnpm version (`engine-strict` in `.npmrc`).
 - `pnpm install`: install workspace dependencies. Refuses package versions
   younger than 30 days.
+
+Checks:
+
+- `pnpm typecheck`: type-check every package with `tsc`. The strict
+  settings live in `tsconfig.base.json`, which each package's
+  `tsconfig.json` extends; `noEmit` there means no files are written.
