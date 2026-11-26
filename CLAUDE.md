@@ -49,6 +49,9 @@ before doing anything else.
 
 - Commits: [Conventional Commits](https://www.conventionalcommits.org/)
   (`feat:`, `fix:`, `docs:`, `chore:`, `test:`, `refactor:`, `ci:`).
+- Attribution: commits end with the `Co-Authored-By: Claude …` trailer and
+  PR descriptions with the "🤖 Generated with Claude Code" line. Nothing
+  else: no session links or other trailers.
 - Branches: `<issue#>-<slug>`, for example `12-engine-purity-lint`. Spikes:
   `spike/<topic>`.
 - PRs are squash-merged; the PR title becomes the commit message, so it
