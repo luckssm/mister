@@ -88,3 +88,7 @@ Checks:
 - `pnpm typecheck`: type-check every package with `tsc`. The strict
   settings live in `tsconfig.base.json`, which each package's
   `tsconfig.json` extends; `noEmit` there means no files are written.
+- `pnpm test`: run every package's tests once with Vitest, from the root
+  (`vitest.config.ts` lists `packages/*` and `apps/*` as projects). Tests
+  live next to the code as `*.test.ts`. `pnpm vitest` runs them in watch
+  mode.
